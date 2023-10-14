@@ -1,0 +1,109 @@
+<div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images1/background.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+    <p>Hi i'm Ayomide Akinrefon, a passionate web developer,<br>
+        who loves creating beautiful and functional websites.<br>
+        Originally from Nigeria.<br> I have an OND degree
+        in mechanical Engineering from Yaba college of technology.<br>
+        I'm constantly learning and exploring new technologies<br>
+        to stay up-to-date with the ever-evolving 
+        web development world.
+        </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Goals')">Goals</p>
+                    <p class="tab-links" onclick="opentab('My Skills')">My Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>Course: </span> Mechanical  Engineering<br></li>
+                        <li><span>Year:</span> 2018-2020<br></li>
+                        <li><span>Level:</span>OND<br></li>
+                        <li><span>School:</span>Yaba college of technology<br></li><br><br>
+                        <li><span>Course:</span>Software Developemnt<br></li>
+                        <li><span>Year:</span>2023<br></li>
+                        <li><span>School:</span>ALX Africa<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Goals">
+                    <ul>
+                        <li>Countinously improve my web development skills</li>
+                        <li>Contribute to open-source projects.</li>
+                        <li>Collaborate with other developers and designers.</li>
+                        <li>Stay updated with the latest web development trends and technologies.</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id=" My Skills">
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Python</li>
+                            <li>flask</li>
+                            <li>My Sql</li>
+                            <li>Javascript</li>
+                            <li>C</li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!----------Skills------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>I make research before enbarking on a project, to 
+                        choosethe right way of the job
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Responsive Design</h2>
+                    <p>Ability to create a well functioning
+                        Responsive website,that looks and 
+                        function well on various device and screen size
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Debugging and Problem Solving</h2>
+                    <p>Ability to trouble shoot and debug code</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+      
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList,add("active-tab");
+        }
+        </script>
+
+    </body>
+</html>
