@@ -297,6 +297,25 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+
+a.github-link {
+    float:inline-start;
+    color: #0366d6; /* Change the color to your preference */
+    text-decoration: none;
+}
+a.github-link:hover {
+text-decoration: underline; /* Add an underline on hover */
+  }
+
+
+
+
+
+
+
+
+
+
 /****---------contact*---------*/
 .contact-left{
     flex-basis: 35%;
@@ -438,4 +457,9 @@ nav ul .fa-solid{
 .copyright{
     font-size: 12px;
 }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
