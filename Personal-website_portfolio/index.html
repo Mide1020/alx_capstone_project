@@ -12,7 +12,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images1/favicon.png" class="logo">
+                <img src="images1/my logo01.png" class="logo" height="100px" width="5px">
                 <ul id="sidemenu">                    <li><a href="#about">About me</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#projects">projects</a></li>
@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row">
             <div class="about-col-1">
-                <img src="images1/background.jpeg">
+                <img src="images1/backgroun01.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About me</h1>
@@ -94,7 +94,7 @@
                 <div>
                     <i class="fa-solid fa-globe"></i>
                     <h2>Web development</h2>
-                    <p>I make research before enbarking on a projet to 
+                    <p>I make research before enbarking on a project to 
                         choose the right way of the job</p>
                         <a href="#">Learn more</a>
                 </div>
@@ -122,7 +122,7 @@
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <p>I've not done any project yet, 
-                but i have a lot of porject i'm planning on
+                but i have a lot of project i'm planning on
             executing, below are few examples of them</p>
             <div class="work-list">
 
@@ -176,7 +176,7 @@
         <div class="row">
             <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
-          <P><i class="fa-solid fa-square-envelope"></i>Akinrefonayomide1@gmail.com</P>
+          <P><i class="fa-solid fa-square-envelope"></i><a href="akinrefonayomide1@gmail.com">akinrefonayomide1@gmail.com</a></P>
           <p><i class="fa-solid fa-square-phone"></i>09064574425</p>
           <div class="social-icons">
             <a href="https://facebook.com/Mide Crafts"><i class="fa-brands fa-facebook-f"></i></a>
@@ -189,13 +189,18 @@
                   
             </div>
             <div class="contact-right">
-                <form action="/send-email" method="post">
+                <form name="submit-to-google-sheet">
+
+                    
                     <input type="text" name="Name" placeholder="Your name" required>
                     <input type="email" name="Email" placeholder="Your email" required>
                     <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit </button>
+                    <button type="Submit" class="btn btn2">Submit </button>
+            
                 </form>
+            
                 <span id="msg"></span>
+                
             
             </div>
         </div>
@@ -242,7 +247,25 @@
         }
 
     </script>
-
-
-    </body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWMi7Iba80hVp7g3R_koOVxzo9n_8DOiugAjO2OCurfcv72wutxIoPN1Mnm-I4PT5lUw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="server.js"></script>
+  
+</body>
     </html>
