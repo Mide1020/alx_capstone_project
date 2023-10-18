@@ -178,11 +178,8 @@
           <P><i class="fa-solid fa-square-envelope"></i><a href="jatto_i">jatto_i@yahoo.com</a></P>
           <p><i class="fa-solid fa-square-phone"></i>08125634647</p>
           <div class="social-icons">
-            <a href="https://facebook.com/Mide Crafts"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://twitter.com/Jatzee4"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://linkedin.com/in/mideakinrefon"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://instagram.com/miderafts"><i class="fa-brands fa-instagram"></i></a>
-
           </div>
           <a href="images1/DolapoCV.pdf" download class="btn btn2">Download Cv</a>
                   
@@ -246,25 +243,6 @@
         }
 
     </script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWMi7Iba80hVp7g3R_koOVxzo9n_8DOiugAjO2OCurfcv72wutxIoPN1Mnm-I4PT5lUw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById('msg')
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },1000)
-            form.reset()
-        })
-        
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <script src="server.js"></script>
   
 </body>
     </html>

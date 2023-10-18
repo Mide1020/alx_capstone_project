@@ -24,9 +24,9 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
-    font-size: 36px; /* Default font size */
+    font-size: 36px;
  
-    /* Define the animation for the h1 element */
+    /* Animation for h1 */
     animation: reveal 0.5s steps(40) 1s normal both, fadeIn 0.5s 1s linear both;
     max-width: 100%;
  }
@@ -171,6 +171,7 @@ nav ul li a:hover::after{
 }
 
 /*------------services---------*/
+
 #services{
     padding: 10px 0;
 }
@@ -214,8 +215,8 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-
 /**----------Projects---------*/
+
 #projects{
     padding: 50px 0;
 }
@@ -306,7 +307,9 @@ a.github-link {
 a.github-link:hover {
 text-decoration: underline; /* Add an underline on hover */
   }
+
 /****---------contact*---------*/
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -386,14 +389,12 @@ form .btn2{
 }
 
 /********css for small screen******/
+
 nav .fa-solid{
     display: none;
 }
 
-
-
 @media only screen and (max-width: 600px){
-
 
 .header-text{
     margin-top: 30%;
