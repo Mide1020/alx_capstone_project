@@ -7,24 +7,30 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
-    background: #080808;
-    color: white;
-
+    background-image: url(images1/pexel\ 3.jpg);
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images1/logo.jpg);
+    background-image: url(images1/torch\ scree.jpg);
     background-size: cover;
     background-position: center;
+}
+#font-size{
+    font-size: 80px;
 }
 .video-text {
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
     font-size: 36px;
+    position: relative;
+    top: -180px;
  
     /* Animation for h1 */
     animation: reveal 0.5s steps(40) 1s normal both, fadeIn 0.5s 1s linear both;
@@ -66,7 +72,7 @@ list-style: none;
 margin: 10px 20px;
 }
 nav ul li a{
-    color: #fff;
+    color: whitesmoke;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -95,10 +101,12 @@ nav ul li a:hover::after{
 .header-text h1 span{
  color: #ff004f;   
 }
+
 /*---- About style ----*/
+
 #about{
     padding: 80px 0;
-    color: #ababab
+    color: white;
 }
 .row{
     display: flex;
