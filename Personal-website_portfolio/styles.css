@@ -314,11 +314,11 @@ nav ul li a:hover::after{
 
 a.github-link {
     float:inline-start;
-    color: #0366d6; /* Change the color to your preference */
+    color: #0366d6;
     text-decoration: none;
 }
 a.github-link:hover {
-text-decoration: underline; /* Add an underline on hover */
+text-decoration: underline;
   }
 
 /****---------contact*---------*/
@@ -394,11 +394,6 @@ form .btn2{
 }
 .copyright i{
     color: #ff004f;
-}
-
-#success-message {
-    display: none;
-    color: green;
 }
 .copyright{
     color: aliceblue;
