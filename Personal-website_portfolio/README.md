@@ -1,1 +1,1 @@
-This is my first project for courtsey ALX, which is personal website portfolio
+This is my first Ever project courtsey ALX Africa, which is personal website portfolio.
