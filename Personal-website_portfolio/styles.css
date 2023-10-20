@@ -8,16 +8,17 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(images1/pexel\ 3.jpg);
-    color: whitesmoke;
+    background-image: url(images1/black.jfif);
+    color: #ff004f;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images1/torch\ scree.jpg);
+    background-image: url(images1/freepik.jfif);
     background-size: cover;
     background-position: center;
 }
@@ -33,7 +34,7 @@ body{
     top: -180px;
  
     /* Animation for h1 */
-    animation: reveal 0.5s steps(40) 1s normal both, fadeIn 0.5s 1s linear both;
+    animation: reveal 0.5s steps(10) 1s normal both, fadeIn 0.5s 0.5s linear both;
     max-width: 100%;
  }
  
@@ -99,7 +100,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
- color: #ff004f;   
+ color: whitesmoke;   
 }
 
 /*---- About style ----*/
@@ -192,7 +193,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-    background: #262626;
+    background: palevioletred;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -212,14 +213,14 @@ nav ul li a:hover::after{
 
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: whitesmoke;
     transform: translateY(-10px);
 }
 
@@ -266,17 +267,21 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
+#text{
+    color: white;
+    font-size: large;
+}
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: whitesmoke;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: pink;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -395,7 +400,9 @@ form .btn2{
     display: none;
     color: green;
 }
-
+.copyright{
+    color: aliceblue;
+}
 /********css for small screen******/
 
 nav .fa-solid{
@@ -405,8 +412,11 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
 
 .header-text{
-    margin-top: 30%;
-    font-size: 15px;
+    margin-top: 20%;
+    font-size: 10px;
+}
+#font-size{
+    padding-left: 1px;
 }
 .header-texth h1{
     font-size: 10px;
