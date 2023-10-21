@@ -7,34 +7,29 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-image: url(images1/black.jfif);
-    color: #ff004f;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
 
+body{
+    background: #080808;
+    color:aqua;
+    background-image: url(images2/back\ 2.jpg);
+    
+
+}
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images1/freepik.jfif);
+    background-image: url();
     background-size: cover;
     background-position: center;
-}
-#font-size{
-    font-size: 80px;
 }
 .video-text {
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
-    font-size: 36px;
-    position: relative;
-    top: -180px;
+    font-size: 36px; /* Default font size */
  
-    /* Animation for h1 */
-    animation: reveal 0.5s steps(10) 1s normal both, fadeIn 0.5s 0.5s linear both;
+    /* Define the animation for the h1 element */
+    animation: reveal 0.5s steps(40) 1s normal both, fadeIn 0.5s 1s linear both;
     max-width: 100%;
  }
  
@@ -73,7 +68,7 @@ list-style: none;
 margin: 10px 20px;
 }
 nav ul li a{
-    color: whitesmoke;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -100,14 +95,12 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
- color: whitesmoke;   
+ color: #ff004f;   
 }
-
 /*---- About style ----*/
-
 #about{
     padding: 80px 0;
-    color: white;
+    color: whitesmoke;
 }
 .row{
     display: flex;
@@ -180,7 +173,6 @@ nav ul li a:hover::after{
 }
 
 /*------------services---------*/
-
 #services{
     padding: 10px 0;
 }
@@ -193,7 +185,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-    background: palevioletred;
+    background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -213,19 +205,19 @@ nav ul li a:hover::after{
 
 .services-list div a{
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover{
-    background: whitesmoke;
+    background: #ff004f;
     transform: translateY(-10px);
 }
 
-/**----------Projects---------*/
 
+/**----------Projects---------*/
 #projects{
     padding: 50px 0;
 }
@@ -267,21 +259,17 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
-#text{
-    color: white;
-    font-size: large;
-}
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
 .layer a{
     margin-top: 20px;
-    color: whitesmoke;
+    color: #ff004f;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: pink;
+    background: #fff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -314,15 +302,23 @@ nav ul li a:hover::after{
 
 a.github-link {
     float:inline-start;
-    color: #0366d6;
+    color: #0366d6; /* Change the color to your preference */
     text-decoration: none;
 }
 a.github-link:hover {
-text-decoration: underline;
+text-decoration: underline; /* Add an underline on hover */
   }
 
-/****---------contact*---------*/
 
+
+
+
+
+
+
+
+
+/****---------contact*---------*/
 .contact-left{
     flex-basis: 35%;
 }
@@ -395,23 +391,25 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
-.copyright{
-    color: aliceblue;
-}
-/********css for small screen******/
 
+#success-message {
+    display: none;
+    color: green;
+}
+
+/********css for small screen******/
 nav .fa-solid{
     display: none;
 }
 
+
+
 @media only screen and (max-width: 600px){
 
+
 .header-text{
-    margin-top: 20%;
-    font-size: 10px;
-}
-#font-size{
-    padding-left: 1px;
+    margin-top: 30%;
+    font-size: 15px;
 }
 .header-texth h1{
     font-size: 10px;
@@ -473,101 +471,3 @@ nav ul .fa-solid{
     margin-top: -40px;
     display: block;
 }
-
-
-
-onst questions = [
-    {
-        question: "What is the full meaning of HTML?",
-        answers:[
-            {text: "hyperlink manipulative language", correct: false},
-            {text: "hyperlink mint language", correct: false},
-            {text: "HyperText Markup Language", correct: true},
-            {text: "hypigment marking language", correct: false},
-        ]
-    },
-    { 
-        question: "What does css stands for",
-        answers:[
-            {text: "casual system sematic", correct: false},
-            {text: "cascading system siren", correct: false},
-            {text: "casual system song", correct: false},
-            {text: "cascading style sheets", correct: true},
-        ]
-    },
-    {
-        question: "how  can you include css file in html document",
-        answers:[
-           {text: "<include> tag", correct: false},
-           {text: "<add> tag", correct: false},
-           {text: "<link> tag", correct: true},
-           {text: "<join> tag", correct: false},
-        ]
-    },
-    {
-        question: "what is the full meaning of OOP in Programming",
-        answers:[
-        {text: "Object operational program", correct: false},
-        {text: "Object organisational program", correct: false},
-        {text: "Object occuring program", correct: false},
-        {text: "Object oriented program", correct: true},
-        ]  
-   },
-   {
-        question: "what is the purpose of IF statement in programming",
-         answers:[
-            {text: "control statement", correct: false},
-            {text: "commitment statement", correct: false},
-            {text: "conditional statement", correct: true},
-            {text: "contract statement", correct: false }
-       ]
-   },
-   {
-        question: "how to you write a comment in python",
-        answers:[
-            {text: "<>", correct: false},
-            {text: "()", correct: false},
-            {text: "#", correct: true},
-            {text: "@", correct: false},
-      ]
-   },
-   {
-        question: "Is java the same thing as Javascript",
-        answers:[
-        {text: "sort of", correct: false},
-        {text: "Yes it is", correct: true},
-        {text: "I don't know", correct: false},
-        {text: "it should", correct: false},
-       ]
-   }
-];
-
-const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-btn");
-
-let currentQuestionIndex = 0;
-let score = 0;
-
-function startQuiz(){
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion();
-}
-
-function showQuestion(){
-    let currentQuestion = question[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ", " +  currentQuestion;
-    question;
-
-    currentQuestion.answer.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answers.text;
-        button.classList.add("btn");
-        answerButton.appendChild(button);
-    });
-        
-    }
-startQuiz();
