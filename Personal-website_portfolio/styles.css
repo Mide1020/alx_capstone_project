@@ -437,7 +437,10 @@ nav .fa-solid{
 #animated-heading{
     position: relative;
     top: -20px;
-    font-size: 25px;
+    font-size: 20px;
+}
+#image{
+    size: 100%;
 }
 .header-text h1{
     font-size: 30px;
