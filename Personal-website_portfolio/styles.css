@@ -425,14 +425,16 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 10px;
 }
 #font-size{
     padding-left: 1px;
+    font-size: medium;
 }
 .header-texth h1{
-    font-size: 10px;
+    font-size: 2px;
+    flex-wrap: wrap;
 
 }
 nav .fa-solid{
@@ -491,6 +493,3 @@ nav ul .fa-solid{
     margin-top: -40px;
     display: block;
 }
-
-
-
